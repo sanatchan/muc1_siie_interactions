@@ -51,7 +51,7 @@ protein.apply_standard_bonds()
 
 all_res = list(protein.get_residues())
 
-'''thr res'''
+"""thr res"""
 
 thr_res = [
     r for r in all_res
@@ -59,7 +59,7 @@ thr_res = [
 ]
 print(f"Filtered THR residues: {len(thr_res)}")
 
-#53-631 correspond to the range of extruding thr repeats spaced at 20 AA.
+"""1-201 correspond to the range of extruding thr repeats spaced at 20 AA. - 10 repeats in the struc """
 
 for res in thr_res:
     add_hydroxyl_hydrogen(protein, res, "OG1", "HG1")
